@@ -18,6 +18,10 @@
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") setOpen(false);
     });
+    /* Chạm ra ngoài menu thì đóng menu */
+    document.addEventListener("click", (e) => {
+      if (links.classList.contains("open") && !links.contains(e.target) && !toggle.contains(e.target)) setOpen(false);
+    });
   }
 
   /* Reveal on scroll */
