@@ -6,16 +6,18 @@
   const toggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".nav-links");
   if (toggle && links) {
-    toggle.addEventListener("click", () => {
-      links.classList.toggle("open");
-      toggle.textContent = links.classList.contains("open") ? "✕" : "☰";
+    const setOpen = (open) => {
+      links.classList.toggle("open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Đóng menu" : "Mở menu");
+      const path = toggle.querySelector("path");
+      if (path) path.setAttribute("d", open ? "M6 6l12 12M18 6 6 18" : "M4 6h16M4 12h16M4 18h16");
+    };
+    toggle.addEventListener("click", () => setOpen(!links.classList.contains("open")));
+    links.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setOpen(false);
     });
-    links.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => {
-        links.classList.remove("open");
-        toggle.textContent = "☰";
-      })
-    );
   }
 
   /* Reveal on scroll */
@@ -39,13 +41,17 @@
 
   /* Count-up stats */
   const counters = document.querySelectorAll("[data-count]");
-  if ("IntersectionObserver" in window && counters.length) {
+  const reduceMotion =
+    window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  /* Giá trị thật đã có sẵn trong HTML; chỉ chạy hiệu ứng đếm khi trình duyệt hỗ trợ */
+  if ("IntersectionObserver" in window && counters.length && !reduceMotion) {
     const co = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (!e.isIntersecting) return;
           const el = e.target;
           const target = parseFloat(el.dataset.count);
+          if (isNaN(target)) return co.unobserve(el);
           const suffix = el.dataset.suffix || "";
           const dur = 1400;
           const start = performance.now();
@@ -107,13 +113,9 @@
       if (okBox) okBox.style.display = "none";
       if (errBox) errBox.style.display = "none";
 
-      // Chưa cấu hình Formspree → hiển thị demo (chưa gửi mail thật)
+      // Chưa cấu hình địa chỉ nhận form → báo lỗi thay vì báo thành công giả
       if (!configured) {
-        show(okBox);
-        form.reset();
-        console.warn(
-          "[SAMOC] Form đang ở chế độ demo. Thay YOUR_FORM_ID trong contact.html bằng mã form Formspree để gửi mail thật."
-        );
+        show(errBox);
         return;
       }
 

@@ -524,3 +524,7 @@ p { color: var(--c-muted); }
   *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Nhãn "Sắp triển khai" cho khối ngành chưa hoạt động */
+.soon{display:inline-block;vertical-align:middle;margin-left:6px;padding:3px 10px;border-radius:999px;font-family:var(--font-body);font-size:.68rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#92400e;background:#fef3c7;border:1px solid #fcd34d;white-space:nowrap}
+.svc-block .soon{margin:0 0 14px}

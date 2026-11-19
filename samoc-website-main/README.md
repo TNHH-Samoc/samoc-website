@@ -1,16 +1,15 @@
 # Website Công ty TNHH Công nghệ - Dịch vụ số SAMOC
 *(SAMOC DIGITAL SERVICES - TECHNOLOGY COMPANY LIMITED — Giám đốc: Nguyễn Thành Trung)*
 
-Website giới thiệu công ty công nghệ đa ngành, tổ chức theo **6 khối ngành** (gộp từ 27 ngành nghề đăng ký):
+Website giới thiệu công ty công nghệ, tổ chức theo **5 khối ngành**:
 
-1. **CNTT & Phần mềm** (6201, 6202, 6209, 5820, 6311)
-2. **Nghiên cứu, Khoa học & Công nghệ / AI** (7211 *ngành chính*, 7212, 7120)
-3. **Xây dựng & Kiến trúc** (4101, 4102, 4291, 4292, 4293, 4299, 7110)
-4. **Thiết kế, Truyền thông & Quảng cáo** (5911, 7420, 7310, 7320)
-5. **Giáo dục & Đào tạo số** (8531, 8532, 8533, 8541, 8559, 8560)
-6. **Tư vấn & Dịch vụ doanh nghiệp** (6820, 7490)
+1. **Phát triển phần mềm và giải pháp trí tuệ nhân tạo**
+2. **Nền tảng phần mềm dịch vụ (SaaS) và hạ tầng điện toán đám mây**
+3. **Thiết bị thông minh và tích hợp hệ thống** *(gắn nhãn "Sắp triển khai" — gỡ nhãn `.soon` trong `index.html` và `services.html` khi đã bổ sung ngành nghề)*
+4. **Tư vấn chuyển đổi số và tối ưu hóa vận hành**
+5. **Đào tạo và nền tảng học tập số**
 
-Có kinh nghiệm tư vấn quốc tế tại **Nam Phi** và **Namibia** (xem trang Dự án).
+Có kinh nghiệm tư vấn quốc tế tại **Nam Phi**, **Liberia** và **Namibia** (xem trang Dự án).
 
 ## 📁 Cấu trúc dự án
 
@@ -18,7 +17,7 @@ Có kinh nghiệm tư vấn quốc tế tại **Nam Phi** và **Namibia** (xem t
 New folder/
 ├── index.html          # Trang chủ (hero, dịch vụ, thống kê, quy trình, đánh giá, CTA)
 ├── about.html          # Giới thiệu (sứ mệnh, tầm nhìn, giá trị, GĐ Nguyễn Thành Trung)
-├── services.html       # 6 khối ngành chi tiết + bảng 27 mã ngành đăng ký + khóa đào tạo + FAQ
+├── services.html       # 5 khối ngành chi tiết + khóa đào tạo + FAQ
 ├── projects.html       # Dự án tiêu biểu (có bộ lọc theo lĩnh vực)
 ├── contact.html        # Liên hệ (form tư vấn + thông tin)
 ├── assets/
@@ -66,13 +65,12 @@ Form ở `contact.html` đã tích hợp sẵn Formspree, chỉ cần dán mã f
 ## 🔧 Cần tùy chỉnh trước khi đưa lên mạng
 
 - **Form liên hệ:** dán mã form Formspree (xem mục "Kết nối form gửi mail thật" ở trên).
-- **Mạng xã hội:** thay `href="#"` trong phần `.socials` bằng link thật (Facebook/LinkedIn/YouTube/Zalo).
-- **Tên miền:** thay `https://samoc.com/` trong các thẻ canonical/Open Graph và `sitemap.xml`/`robots.txt` bằng tên miền thật.
-- **Ảnh chia sẻ:** xuất `assets/og-image.svg` ra **PNG 1200×630** (`og-image.png`) rồi đổi `og:image`/`twitter:image` sang `.png` (Facebook/Zalo chỉ render PNG/JPG).
-- **Logo:** hiện là monogram "S" dạng SVG gradient — có thể thay bằng logo chính thức.
-- **Số liệu thật:** số liệu hiện để ở mức trung tính (6 khối ngành, 27 ngành nghề…); cập nhật khi có số thực tế.
+- **Mạng xã hội:** phần `.socials` hiện có Facebook và Zalo; bổ sung LinkedIn/YouTube khi có trang chính thức (không để `href="#"`).
+- **Tên miền:** các thẻ canonical/Open Graph, `sitemap.xml`, `robots.txt` đã dùng `https://samocdigital.com/`; nếu đổi tên miền cần thay đồng loạt.
+- **Ảnh chia sẻ:** `assets/og-image.png` (1200×630) được xuất từ `assets/og-image.svg`; khi sửa SVG cần xuất lại PNG.
+- **Số liệu thật:** số liệu hiện để ở mức trung tính (5 khối ngành, 3 dự án quốc tế…); cập nhật khi có số thực tế.
 
-> ✅ Đã cấu hình sẵn: thông tin liên hệ thật (địa chỉ, `0967 515 828`, `tnhhsamoc@gmail.com` — bấm gọi/gửi mail được), Google Maps nhúng thật, favicon, SEO/Open Graph.
+> ✅ Đã cấu hình sẵn: thông tin liên hệ thật (địa chỉ, `0922 216 123`, `tnhhsamoc@gmail.com` — bấm gọi/gửi mail được), Google Maps nhúng thật, favicon, SEO/Open Graph.
 
 ## 🎨 Đổi màu thương hiệu
 
