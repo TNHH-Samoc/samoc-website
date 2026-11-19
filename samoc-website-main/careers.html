@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    .jobs { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .jobs { --cols:2; --gap:20px; }
     .job { border:1px solid var(--c-line); border-radius:var(--radius); padding:28px; background:#fff; box-shadow:var(--shadow-xs); transition:transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s; display:flex; flex-direction:column; }
     .job:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:var(--c-line-2); }
     .job .job-top { display:flex; align-items:center; gap:14px; margin-bottom:14px; }
@@ -37,7 +37,7 @@
     .job .job-meta .icon { width:14px; height:14px; stroke-width:2; }
     .job p { font-size:.95rem; margin-bottom:20px; }
     .job .btn { align-self:flex-start; margin-top:auto; }
-    @media (max-width:760px){ .jobs{ grid-template-columns:1fr; } }
+    @media (max-width:760px){ .jobs{ --cols:1; } }
   </style>
 </head>
 <body>
