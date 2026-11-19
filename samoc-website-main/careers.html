@@ -41,10 +41,11 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Bỏ qua phần điều hướng</a>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand" aria-label="SAMOC trang chủ">
+      <a href="index.html" class="brand">
 <svg class="logo" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <defs>
     <linearGradient id="tg" x1="0" y1="0" x2="1" y2="1">
@@ -67,12 +68,14 @@
         <a href="about.html">Giới thiệu</a>
         <a href="services.html">Khối ngành</a>
         <a href="projects.html">Dự án</a>
-        <a href="careers.html" class="active">Tuyển dụng</a>
+        <a href="careers.html" class="active" aria-current="page">Tuyển dụng</a>
         <a href="contact.html" class="btn btn-brand nav-cta">Liên hệ tư vấn</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navLinks"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navLinks"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </header>
+
+  <main id="main">
 
   <section class="page-hero">
     <div class="glow"></div>
@@ -97,12 +100,12 @@
         <p>Môi trường công nghệ năng động, lộ trình rõ ràng và cơ hội làm việc trên đa dạng lĩnh vực.</p>
       </div>
       <div class="values-grid">
-        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div><h4>Công nghệ tiên phong</h4><p>Làm việc với AI, dữ liệu lớn, IoT và các công nghệ mới nhất trong những dự án thực tế.</p></div>
-        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div><h4>Lộ trình thăng tiến</h4><p>Định hướng phát triển rõ ràng, đánh giá minh bạch và cơ hội thăng tiến theo năng lực.</p></div>
-        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div><h4>Đãi ngộ cạnh tranh</h4><p>Lương thưởng hấp dẫn theo năng lực, thưởng dự án, phụ cấp và chế độ phúc lợi đầy đủ.</p></div>
-        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h4>Đào tạo liên tục</h4><p>Được đào tạo nội bộ, học các khóa AI &amp; năng lực số, phát triển kỹ năng không ngừng.</p></div>
-        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h4>Văn hóa cởi mở</h4><p>Đội ngũ trẻ trung, tôn trọng ý tưởng, làm việc nhóm gắn kết và đề cao sự sáng tạo.</p></div>
-        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h4>Dự án đa dạng &amp; quốc tế</h4><p>Cơ hội tham gia dự án trên nhiều lĩnh vực và thị trường quốc tế như Nam Phi, Liberia, Namibia.</p></div>
+        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div><h3>Công nghệ tiên phong</h3><p>Làm việc với AI, dữ liệu lớn, IoT và các công nghệ mới nhất trong những dự án thực tế.</p></div>
+        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div><h3>Lộ trình thăng tiến</h3><p>Định hướng phát triển rõ ràng, đánh giá minh bạch và cơ hội thăng tiến theo năng lực.</p></div>
+        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div><h3>Đãi ngộ cạnh tranh</h3><p>Lương thưởng hấp dẫn theo năng lực, thưởng dự án, phụ cấp và chế độ phúc lợi đầy đủ.</p></div>
+        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3>Đào tạo liên tục</h3><p>Được đào tạo nội bộ, học các khóa AI &amp; năng lực số, phát triển kỹ năng không ngừng.</p></div>
+        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Văn hóa cởi mở</h3><p>Đội ngũ trẻ trung, tôn trọng ý tưởng, làm việc nhóm gắn kết và đề cao sự sáng tạo.</p></div>
+        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Dự án đa dạng &amp; quốc tế</h3><p>Cơ hội tham gia dự án trên nhiều lĩnh vực và thị trường quốc tế như Nam Phi, Liberia, Namibia.</p></div>
       </div>
     </div>
   </section>
@@ -165,10 +168,10 @@
       </div>
       <div class="process-grid">
         <div class="process-line"></div>
-        <div class="process-step reveal"><div class="num">01</div><h4>Nộp hồ sơ</h4><p>Gửi CV qua email tuyển dụng hoặc nhấn "Ứng tuyển" ở vị trí phù hợp.</p></div>
-        <div class="process-step reveal" data-delay="1"><div class="num">02</div><h4>Sơ loại</h4><p>Bộ phận nhân sự xem xét hồ sơ và liên hệ trong vòng 3–5 ngày làm việc.</p></div>
-        <div class="process-step reveal" data-delay="2"><div class="num">03</div><h4>Phỏng vấn</h4><p>Trao đổi chuyên môn và văn hóa với quản lý trực tiếp và đội ngũ.</p></div>
-        <div class="process-step reveal" data-delay="3"><div class="num">04</div><h4>Nhận việc</h4><p>Nhận offer, hoàn tất thủ tục và bắt đầu hành trình cùng SAMOC.</p></div>
+        <div class="process-step reveal"><div class="num">01</div><h3>Nộp hồ sơ</h3><p>Gửi CV qua email tuyển dụng hoặc nhấn "Ứng tuyển" ở vị trí phù hợp.</p></div>
+        <div class="process-step reveal" data-delay="1"><div class="num">02</div><h3>Sơ loại</h3><p>Bộ phận nhân sự xem xét hồ sơ và liên hệ trong vòng 3–5 ngày làm việc.</p></div>
+        <div class="process-step reveal" data-delay="2"><div class="num">03</div><h3>Phỏng vấn</h3><p>Trao đổi chuyên môn và văn hóa với quản lý trực tiếp và đội ngũ.</p></div>
+        <div class="process-step reveal" data-delay="3"><div class="num">04</div><h3>Nhận việc</h3><p>Nhận offer, hoàn tất thủ tục và bắt đầu hành trình cùng SAMOC.</p></div>
       </div>
     </div>
   </section>
@@ -188,6 +191,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="site-footer">
     <div class="glow"></div>
@@ -201,26 +205,27 @@
           <p>Công ty TNHH Công nghệ - Dịch vụ số SAMOC <em>(SAMOC DIGITAL SERVICES - TECHNOLOGY COMPANY LIMITED)</em> — đối tác công nghệ về phần mềm, trí tuệ nhân tạo, hạ tầng số, tư vấn chuyển đổi số và đào tạo cho doanh nghiệp trong nước và quốc tế.</p>
           <div class="socials">
             <a href="https://www.facebook.com/samocdigital/" target="_blank" rel="noopener noreferrer" aria-label="Facebook SAMOC"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+            <a href="#" aria-label="LinkedIn SAMOC"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V9.99H5.67v8.35zM7 8.84a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.5v-4.58c0-2.45-1.31-3.59-3.06-3.59-1.41 0-2.04.78-2.39 1.32v-1.13h-2.67v8.35h2.67v-4.66c0-.25.02-.5.09-.67.2-.5.65-1.01 1.41-1.01.99 0 1.39.76 1.39 1.86v4.48z"/></svg></a>
             <a href="https://zalo.me/3719155942943261749" target="_blank" rel="noopener noreferrer" aria-label="Zalo SAMOC"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2H15A7 7 0 0 1 22 9V15A7 7 0 0 1 15 22H9C5.6 22 3.9 21.3 2.6 22.1C1.9 22.5 1.3 21.8 1.7 21.1C2.6 19.6 2 18.2 2 15V9A7 7 0 0 1 9 2Z"/><path d="M9.5 9H14.5L9.5 15H14.5"/></svg></a>
           </div>
         </div>
-        <div class="footer-col"><h5>Khối ngành</h5>
+        <div class="footer-col"><h2>Khối ngành</h2>
           <a href="services.html#software">Phần mềm &amp; Giải pháp AI</a>
           <a href="services.html#cloud">SaaS &amp; Hạ tầng đám mây</a>
           <a href="services.html#devices">Thiết bị thông minh &amp; Tích hợp</a>
           <a href="services.html#consulting">Tư vấn chuyển đổi số</a>
           <a href="services.html#education">Đào tạo &amp; Học tập số</a>
         </div>
-        <div class="footer-col"><h5>Công ty</h5>
+        <div class="footer-col"><h2>Công ty</h2>
           <a href="about.html">Giới thiệu</a>
           <a href="projects.html">Dự án tiêu biểu</a>
           <a href="careers.html">Tuyển dụng</a>
           <a href="contact.html">Liên hệ</a>
         </div>
-        <div class="footer-col footer-contact"><h5>Liên hệ</h5>
+        <div class="footer-col footer-contact"><h2>Liên hệ</h2>
           <ul>
             <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Số 10 ngõ 20 phố Nghĩa Đô, Phường Nghĩa Đô, Hà Nội, Việt Nam</span></li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:0922216123">0922 216 123</a></li>
+            <li><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:0922216123">0922&nbsp;216&nbsp;123</a></li>
             <li><svg class="icon" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:tnhhsamoc@gmail.com">tnhhsamoc@gmail.com</a></li>
             <li><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>T2–T7: 8:00–17:30</span></li>
           </ul>

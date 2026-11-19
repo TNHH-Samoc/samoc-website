@@ -81,10 +81,12 @@
       document.querySelectorAll(".faq-item.open").forEach((o) => {
         o.classList.remove("open");
         o.querySelector(".faq-a").style.maxHeight = null;
+        o.querySelector(".faq-q").setAttribute("aria-expanded", "false");
       });
       if (!open) {
         item.classList.add("open");
         ans.style.maxHeight = ans.scrollHeight + "px";
+        q.setAttribute("aria-expanded", "true");
       }
     });
   });
@@ -173,6 +175,11 @@
     const first = document.getElementById("name");
     if (first) setTimeout(() => first.focus({ preventScroll: true }), 500);
   }
+
+  /* Liên kết chưa có địa chỉ (ví dụ LinkedIn): không cuộn về đầu trang khi bấm */
+  document.querySelectorAll('a[href="#"]').forEach((a) =>
+    a.addEventListener("click", (e) => e.preventDefault())
+  );
 
   /* Footer year */
   const y = document.getElementById("year");

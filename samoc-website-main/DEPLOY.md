@@ -7,7 +7,7 @@ Website này là **trang tĩnh (HTML/CSS/JS)** — không cần build, không c�
 ## ✅ Việc cần làm trước khi công bố (checklist)
 
 - [ ] Dán **mã form Formspree** vào `contact.html` (xem `README.md` → mục "Kết nối form gửi mail thật").
-- [x] Mạng xã hội (`.socials`): đã có Facebook và Zalo; bổ sung LinkedIn/YouTube khi có trang chính thức.
+- [ ] Mạng xã hội (`.socials`): thay `href="#"` của biểu tượng LinkedIn bằng địa chỉ trang LinkedIn chính thức.
 - [ ] (Nên) Xuất `assets/og-image.svg` ra **PNG 1200×630** rồi đổi `og:image` / `twitter:image` sang `.png`.
 
 ---
