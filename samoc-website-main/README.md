@@ -5,7 +5,7 @@ Website giới thiệu công ty công nghệ, tổ chức theo **5 khối ngành
 
 1. **Phát triển phần mềm và giải pháp trí tuệ nhân tạo**
 2. **Nền tảng phần mềm dịch vụ (SaaS) và hạ tầng điện toán đám mây**
-3. **Thiết bị thông minh và tích hợp hệ thống** *(gắn nhãn "Sắp triển khai" — gỡ nhãn `.soon` trong `index.html` và `services.html` khi đã bổ sung ngành nghề)*
+3. **Thiết bị thông minh và tích hợp hệ thống**
 4. **Tư vấn chuyển đổi số và tối ưu hóa vận hành**
 5. **Đào tạo và nền tảng học tập số**
 

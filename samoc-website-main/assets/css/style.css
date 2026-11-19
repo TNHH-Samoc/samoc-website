@@ -203,7 +203,7 @@ p { color: var(--c-muted); }
   display: flex; flex-direction: column;
 }
 .bento-card::before {
-  content: ""; position: absolute; inset: 0; opacity: 0; transition: opacity .35s;
+  content: ""; position: absolute; inset: 0; opacity: 0; transition: opacity .35s; pointer-events: none;
   background: radial-gradient(380px circle at var(--mx,80%) var(--my,0%), rgba(79,70,229,.07), transparent 60%);
 }
 .bento-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); border-color: var(--c-line-2); }
@@ -228,7 +228,7 @@ p { color: var(--c-muted); }
 .svc-link:hover .icon { transform: translateX(4px); }
 
 .bento-card.dark { background: var(--grad-dark); color: #fff; border: none; justify-content: center; }
-.bento-card.dark::after { content:""; position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 32px 32px; mask-image: radial-gradient(80% 80% at 80% 20%, #000, transparent); }
+.bento-card.dark::after { content:""; position:absolute; inset:0; pointer-events:none; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 32px 32px; mask-image: radial-gradient(80% 80% at 80% 20%, #000, transparent); }
 .bento-card.dark > * { position: relative; }
 .bento-card.dark h3 { color: #fff; }
 .bento-card.dark p { color: #aeb6cf; }
@@ -525,6 +525,3 @@ p { color: var(--c-muted); }
   .reveal { opacity: 1; transform: none; }
 }
 
-/* Nhãn "Sắp triển khai" cho khối ngành chưa hoạt động */
-.soon{display:inline-block;vertical-align:middle;margin-left:6px;padding:3px 10px;border-radius:999px;font-family:var(--font-body);font-size:.68rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#92400e;background:#fef3c7;border:1px solid #fcd34d;white-space:nowrap}
-.svc-block .soon{margin:0 0 14px}
