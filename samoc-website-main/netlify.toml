@@ -2,10 +2,10 @@
 [build]
   publish = "."
 
-# Tự chuyển hướng www.samoc.com → samoc.com (đổi tên miền nếu khác)
+# Tự chuyển hướng www.samocdigital.com → samocdigital.com (đổi tên miền nếu khác)
 [[redirects]]
-  from = "https://www.samoc.com/*"
-  to = "https://samoc.com/:splat"
+  from = "https://www.samocdigital.com/*"
+  to = "https://samocdigital.com/:splat"
   status = 301
   force = true
 

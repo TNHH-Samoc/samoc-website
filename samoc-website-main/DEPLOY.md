@@ -1,4 +1,4 @@
-# 🚀 Hướng dẫn Deploy website SAMOC + tên miền samoc.com
+# 🚀 Hướng dẫn Deploy website SAMOC + tên miền samocdigital.com
 
 Website này là **trang tĩnh (HTML/CSS/JS)** — không cần build, không cần server. Dưới đây là cách **phổ biến & uy tín nhất**.
 
@@ -7,12 +7,12 @@ Website này là **trang tĩnh (HTML/CSS/JS)** — không cần build, không c�
 ## ✅ Việc cần làm trước khi công bố (checklist)
 
 - [ ] Dán **mã form Formspree** vào `contact.html` (xem `README.md` → mục "Kết nối form gửi mail thật").
-- [ ] Thay `href="#"` ở mạng xã hội (`.socials`) bằng link Facebook/LinkedIn/YouTube/Zalo thật.
+- [x] Mạng xã hội (`.socials`): đã có Facebook và Zalo; bổ sung LinkedIn/YouTube khi có trang chính thức.
 - [ ] (Nên) Xuất `assets/og-image.svg` ra **PNG 1200×630** rồi đổi `og:image` / `twitter:image` sang `.png`.
 
 ---
 
-## 1️⃣ Mua tên miền `samoc.com` (nhà cung cấp uy tín nhất)
+## 1️⃣ Mua tên miền `samocdigital.com` (nhà cung cấp uy tín nhất)
 
 | Nhà cung cấp | Vì sao chọn | Ghi chú |
 |---|---|---|
@@ -24,7 +24,7 @@ Website này là **trang tĩnh (HTML/CSS/JS)** — không cần build, không c�
 > **Khuyến nghị:** Mua `.com` ở **Cloudflare** hoặc **Namecheap**. Nếu cần hóa đơn đỏ (VAT) cho công ty → dùng nhà cung cấp Việt Nam.
 
 **Các bước mua (ví dụ Namecheap):**
-1. Vào https://www.namecheap.com → tìm `samoc.com`.
+1. Vào https://www.namecheap.com → tìm `samocdigital.com`.
 2. Add to Cart → Checkout → thanh toán (thẻ Visa/Mastercard).
 3. Bật **Domain Privacy** (miễn phí) để ẩn thông tin cá nhân.
 
@@ -61,9 +61,9 @@ Cả 2 cũng miễn phí, làm tương tự (Import từ GitHub, không cần bu
 
 ---
 
-## 3️⃣ Gắn tên miền `samoc.com` vào Netlify
+## 3️⃣ Gắn tên miền `samocdigital.com` vào Netlify
 
-1. Trong site Netlify → **Domain settings → Add a domain** → nhập `samoc.com`.
+1. Trong site Netlify → **Domain settings → Add a domain** → nhập `samocdigital.com`.
 2. Netlify sẽ hướng dẫn 1 trong 2 cách:
 
    **Cách 1 — Dùng Netlify DNS (đơn giản nhất):**
@@ -88,9 +88,9 @@ Cả 2 cũng miễn phí, làm tương tự (Import từ GitHub, không cần bu
 
 ## 5️⃣ Sau khi lên sóng
 
-- **Google Search Console** (https://search.google.com/search-console): thêm `samoc.com`, xác minh, rồi **Submit sitemap**: `https://samoc.com/sitemap.xml`.
-- Kiểm tra: mở `samoc.com` trên máy tính + điện thoại; thử gửi form; bấm số điện thoại/email.
-- Kiểm tra chia sẻ link đẹp: dán `samoc.com` vào https://www.opengraph.xyz để xem preview.
+- **Google Search Console** (https://search.google.com/search-console): thêm `samocdigital.com`, xác minh, rồi **Submit sitemap**: `https://samocdigital.com/sitemap.xml`.
+- Kiểm tra: mở `samocdigital.com` trên máy tính + điện thoại; thử gửi form; bấm số điện thoại/email.
+- Kiểm tra chia sẻ link đẹp: dán `samocdigital.com` vào https://www.opengraph.xyz để xem preview.
 
 ---
 
