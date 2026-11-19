@@ -25,10 +25,11 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Bỏ qua phần điều hướng</a>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand" aria-label="SAMOC trang chủ">
+      <a href="index.html" class="brand">
 <svg class="logo" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <defs>
     <linearGradient id="tg" x1="0" y1="0" x2="1" y2="1">
@@ -48,15 +49,17 @@
       </a>
       <nav class="nav-links" id="navLinks">
         <a href="index.html">Trang chủ</a>
-        <a href="about.html" class="active">Giới thiệu</a>
+        <a href="about.html" class="active" aria-current="page">Giới thiệu</a>
         <a href="services.html">Khối ngành</a>
         <a href="projects.html">Dự án</a>
         <a href="careers.html">Tuyển dụng</a>
         <a href="contact.html" class="btn btn-brand nav-cta">Liên hệ tư vấn</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navLinks"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false" aria-controls="navLinks"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </header>
+
+  <main id="main">
 
   <section class="page-hero">
     <div class="glow"></div>
@@ -103,17 +106,17 @@
       <div class="values-grid">
         <div class="value reveal">
           <div class="vi"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-          <h4>Sứ mệnh</h4>
+          <h3>Sứ mệnh</h3>
           <p>Mang công nghệ và trí tuệ nhân tạo trở thành công cụ thiết thực, giúp doanh nghiệp Việt nâng cao năng suất, tối ưu chi phí và phát triển bền vững.</p>
         </div>
         <div class="value reveal" data-delay="1">
           <div class="vi"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></div>
-          <h4>Tầm nhìn</h4>
+          <h3>Tầm nhìn</h3>
           <p>Trở thành đối tác công nghệ hàng đầu khu vực, dẫn dắt làn sóng chuyển đổi số và ứng dụng AI cho doanh nghiệp vừa và nhỏ tại Việt Nam.</p>
         </div>
         <div class="value reveal" data-delay="2">
           <div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3 8 9l4 13 4-13-3-6M2 9h20"/></svg></div>
-          <h4>Cam kết</h4>
+          <h3>Cam kết</h3>
           <p>Đặt lợi ích và thành công của khách hàng làm trung tâm, bảo đảm chất lượng, tiến độ và sự đồng hành lâu dài trong mọi dự án.</p>
         </div>
       </div>
@@ -128,12 +131,12 @@
         <h2 class="section-title">Những điều làm nên SAMOC</h2>
       </div>
       <div class="values-grid">
-        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></div><h4>Đổi mới sáng tạo</h4><p>Luôn cập nhật công nghệ mới nhất và tư duy sáng tạo để mang lại giải pháp vượt trội.</p></div>
-        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div><h4>Chính trực &amp; minh bạch</h4><p>Trung thực trong tư vấn, minh bạch trong báo giá và rõ ràng trong cam kết.</p></div>
-        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div><h4>Tận tâm phục vụ</h4><p>Lắng nghe và thấu hiểu, đồng hành cùng khách hàng đến khi đạt kết quả thực sự.</p></div>
-        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div><h4>Chất lượng vượt trội</h4><p>Tuân thủ tiêu chuẩn cao về kỹ thuật, bảo mật và trải nghiệm người dùng.</p></div>
-        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div><h4>Hiệu quả thực tế</h4><p>Mọi giải pháp đều hướng tới giá trị đo lường được cho hoạt động kinh doanh.</p></div>
-        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div><h4>Phát triển bền vững</h4><p>Xây dựng quan hệ đối tác lâu dài và đóng góp cho cộng đồng công nghệ Việt.</p></div>
+        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></div><h3>Đổi mới sáng tạo</h3><p>Luôn cập nhật công nghệ mới nhất và tư duy sáng tạo để mang lại giải pháp vượt trội.</p></div>
+        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div><h3>Chính trực &amp; minh bạch</h3><p>Trung thực trong tư vấn, minh bạch trong báo giá và rõ ràng trong cam kết.</p></div>
+        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div><h3>Tận tâm phục vụ</h3><p>Lắng nghe và thấu hiểu, đồng hành cùng khách hàng đến khi đạt kết quả thực sự.</p></div>
+        <div class="value reveal"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Chất lượng vượt trội</h3><p>Tuân thủ tiêu chuẩn cao về kỹ thuật, bảo mật và trải nghiệm người dùng.</p></div>
+        <div class="value reveal" data-delay="1"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div><h3>Hiệu quả thực tế</h3><p>Mọi giải pháp đều hướng tới giá trị đo lường được cho hoạt động kinh doanh.</p></div>
+        <div class="value reveal" data-delay="2"><div class="vi"><svg class="icon" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div><h3>Phát triển bền vững</h3><p>Xây dựng quan hệ đối tác lâu dài và đóng góp cho cộng đồng công nghệ Việt.</p></div>
       </div>
     </div>
   </section>
@@ -170,6 +173,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="site-footer">
     <div class="glow"></div>
@@ -183,26 +187,27 @@
           <p>Công ty TNHH Công nghệ - Dịch vụ số SAMOC <em>(SAMOC DIGITAL SERVICES - TECHNOLOGY COMPANY LIMITED)</em> — đối tác công nghệ về phần mềm, trí tuệ nhân tạo, hạ tầng số, tư vấn chuyển đổi số và đào tạo cho doanh nghiệp trong nước và quốc tế.</p>
           <div class="socials">
             <a href="https://www.facebook.com/samocdigital/" target="_blank" rel="noopener noreferrer" aria-label="Facebook SAMOC"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
-            <a href="https://zalo.me/3719155942943261749" target="_blank" rel="noopener noreferrer" aria-label="Zalo SAMOC"><strong style="font-size:.78rem;font-weight:800">Z</strong></a>
+            <a href="#" aria-label="LinkedIn SAMOC"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V9.99H5.67v8.35zM7 8.84a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.5v-4.58c0-2.45-1.31-3.59-3.06-3.59-1.41 0-2.04.78-2.39 1.32v-1.13h-2.67v8.35h2.67v-4.66c0-.25.02-.5.09-.67.2-.5.65-1.01 1.41-1.01.99 0 1.39.76 1.39 1.86v4.48z"/></svg></a>
+            <a href="https://zalo.me/3719155942943261749" target="_blank" rel="noopener noreferrer" aria-label="Zalo SAMOC"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2H15A7 7 0 0 1 22 9V15A7 7 0 0 1 15 22H9C5.6 22 3.9 21.3 2.6 22.1C1.9 22.5 1.3 21.8 1.7 21.1C2.6 19.6 2 18.2 2 15V9A7 7 0 0 1 9 2Z"/><path d="M9.5 9H14.5L9.5 15H14.5"/></svg></a>
           </div>
         </div>
-        <div class="footer-col"><h5>Khối ngành</h5>
+        <div class="footer-col"><h2>Khối ngành</h2>
           <a href="services.html#software">Phần mềm &amp; Giải pháp AI</a>
           <a href="services.html#cloud">SaaS &amp; Hạ tầng đám mây</a>
           <a href="services.html#devices">Thiết bị thông minh &amp; Tích hợp</a>
           <a href="services.html#consulting">Tư vấn chuyển đổi số</a>
           <a href="services.html#education">Đào tạo &amp; Học tập số</a>
         </div>
-        <div class="footer-col"><h5>Công ty</h5>
+        <div class="footer-col"><h2>Công ty</h2>
           <a href="about.html">Giới thiệu</a>
           <a href="projects.html">Dự án tiêu biểu</a>
           <a href="contact.html">Liên hệ</a>
           <a href="careers.html">Tuyển dụng</a>
         </div>
-        <div class="footer-col footer-contact"><h5>Liên hệ</h5>
+        <div class="footer-col footer-contact"><h2>Liên hệ</h2>
           <ul>
             <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Số 10 ngõ 20 phố Nghĩa Đô, Phường Nghĩa Đô, Hà Nội, Việt Nam</span></li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:0922216123">0922 216 123</a></li>
+            <li><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:0922216123">0922&nbsp;216&nbsp;123</a></li>
             <li><svg class="icon" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:tnhhsamoc@gmail.com">tnhhsamoc@gmail.com</a></li>
             <li><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>T2–T7: 8:00–17:30</span></li>
           </ul>

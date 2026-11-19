@@ -65,7 +65,8 @@ Form ở `contact.html` đã tích hợp sẵn Formspree, chỉ cần dán mã f
 ## 🔧 Cần tùy chỉnh trước khi đưa lên mạng
 
 - **Form liên hệ:** dán mã form Formspree (xem mục "Kết nối form gửi mail thật" ở trên).
-- **Mạng xã hội:** phần `.socials` hiện có Facebook và Zalo; bổ sung LinkedIn/YouTube khi có trang chính thức (không để `href="#"`).
+- **Header bảo mật trên Cloudflare:** khai báo trong tệp `_headers` (Cloudflare áp dụng khi triển khai; `netlify.toml` chỉ có tác dụng nếu dùng Netlify).
+- **Mạng xã hội:** phần `.socials` có Facebook, LinkedIn và Zalo. Liên kết LinkedIn đang để `href="#"`; khi có địa chỉ trang, thay `#` trong các thẻ `aria-label="LinkedIn SAMOC"` (8 vị trí trên 7 trang) và thêm `target="_blank" rel="noopener noreferrer"`.
 - **Tên miền:** các thẻ canonical/Open Graph, `sitemap.xml`, `robots.txt` đã dùng `https://samocdigital.com/`; nếu đổi tên miền cần thay đồng loạt.
 - **Ảnh chia sẻ:** `assets/og-image.png` (1200×630) được xuất từ `assets/og-image.svg`; khi sửa SVG cần xuất lại PNG.
 - **Số liệu thật:** số liệu hiện để ở mức trung tính (5 khối ngành, 3 dự án quốc tế…); cập nhật khi có số thực tế.

@@ -1,0 +1,13 @@
+# Cloudflare Workers đọc tệp này khi triển khai và áp dụng cho các trang tĩnh; bản thân tệp không được công khai.
+# (netlify.toml chỉ có tác dụng khi triển khai trên Netlify.)
+
+# Header bảo mật cơ bản cho mọi trang
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Không cho công cụ tìm kiếm lập chỉ mục bản sao trên tên miền workers.dev (bản chính là samocdigital.com)
+https://samoc-website.trungbim1012.workers.dev/*
+  X-Robots-Tag: noindex
